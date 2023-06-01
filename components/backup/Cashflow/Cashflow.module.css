@@ -1,0 +1,33 @@
+.Cashflow_Container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+.Left_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Right_side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Right_side button {
+  outline: none;
+  border: 2px solid #00b97f;
+  padding: 10px;
+  background-color: inherit;
+}
+
+.Select {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}

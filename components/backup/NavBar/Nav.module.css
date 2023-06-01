@@ -1,0 +1,17 @@
+.MainNav {
+  height: 70px;
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+
+.MainNav_Left {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.MainNav_Right {
+  /* background-color: bisque; */
+}

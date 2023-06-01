@@ -1,0 +1,6 @@
+.Body {
+  width: 100vw;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}

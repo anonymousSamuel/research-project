@@ -1,0 +1,206 @@
+.Container {
+  display: grid;
+  grid-template-columns: auto;
+  font-family: "Raleway", sans-serif;
+  /* background: #101010; */
+  row-gap: 40px;
+  padding: 20px 20px;
+}
+
+.Heading {
+  font-size: 50px;
+  /* color: white; */
+  color: black;
+  font-family: inherit;
+}
+
+.SmallHeading {
+  color: violet;
+  font-size: 14px;
+}
+
+.Paragraph {
+  color: #707070;
+  line-height: 1.6;
+  font-family: inherit;
+}
+
+.ImageContainer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.SmallImageContainer {
+  position: relative;
+  width: 100%;
+  height: 320px;
+}
+
+.ImageContainer:hover img {
+  filter: none;
+}
+
+.SmallImageContainer:hover img {
+  filter: none;
+}
+
+.ImageContainer img {
+  object-fit: cover !important;
+  filter: grayscale(1);
+}
+
+.SmallImageContainer img {
+  object-fit: cover !important;
+  filter: grayscale(1);
+}
+
+.AnotherImageContainer {
+  position: relative;
+  object-fit: cover;
+  height: 300px;
+}
+
+.AnotherImageContainer img {
+  object-fit: cover;
+}
+
+.Main {
+  display: grid;
+  grid-template-columns: auto;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  row-gap: 10px;
+  color: white;
+  /* color: black; */
+}
+
+.First {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Us {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 30px;
+}
+
+.Who {
+  display: grid;
+  grid-template-columns: auto;
+  /* color: white; */
+  color: black;
+  row-gap: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.Who p {
+  color: #707070;
+  line-height: 2;
+}
+
+.Vr {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.Directors {
+  display: grid;
+  grid-template-columns: auto;
+  /* color: white; */
+  color: black;
+  row-gap: 20px;
+}
+
+.DirectHeading {
+  padding-bottom: 50px;
+  font-size: 30px;
+}
+
+.Profiles {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 50px;
+  width: 100%;
+  justify-items: center;
+}
+
+.Profile {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 10px;
+  word-spacing: 5px;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  max-width: 700px;
+}
+
+.Name,
+.Position,
+.Title {
+  position: relative;
+  /* text-align: center; */
+  /* padding-bottom: 20px; */
+}
+
+.Name {
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.Title {
+  /* padding-bottom: 10px; */
+  line-height: 1.5;
+  color: #707070;
+}
+
+.Position {
+  padding-bottom: 50px;
+  color: #707070;
+}
+
+.Position hr {
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  height: 3px;
+  outline: none;
+  border: none;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  background-color: violet;
+}
+
+.Profile:nth-child(even) hr {
+  right: 0;
+}
+
+.Achievements {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 20px;
+  /* color: white; */
+  color: black;
+}
+
+.AchievHeading {
+  font-size: 20px;
+}
+
+.AnotherParagraph {
+  line-height: 2;
+  color: #707070;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 700px) {
+  .Profiles {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+}
