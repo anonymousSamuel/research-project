@@ -46,12 +46,7 @@ export default function Nav() {
               );
             }
             return (
-              <span
-                onClick={() =>
-                  loader.isLoading == false && loader.setIsLoading(true)
-                }
-                key={i}
-              >
+              <span key={i}>
                 <Link href={el.href}>{el.name}</Link>
               </span>
             );
@@ -72,12 +67,7 @@ export default function Nav() {
             );
           }
           return (
-            <span
-              onClick={() =>
-                loader.isLoading == false && loader.setIsLoading(true)
-              }
-              key={i}
-            >
+            <span key={i}>
               <Link href={el.href}>{el.name}</Link>
             </span>
           );

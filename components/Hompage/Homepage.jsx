@@ -6,7 +6,7 @@ export default function Homepage() {
     <>
       <Nav />
       <div className={classes.container}>
-        <form>
+        <form style={{ maxWidth: "600px" }}>
           <label htmlFor="fcover">Forest Cover</label>
           <input
             type="text"
@@ -22,13 +22,6 @@ export default function Homepage() {
             name="carbonfootprint"
             placeholder="Enter carbon footprint.."
           />
-
-          {/* <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select> */}
 
           <input type="submit" value="Submit" className={classes.Submit} />
         </form>
